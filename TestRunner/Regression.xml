@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="CognementoCRM Test automtion regression suite"
+	thread-count="3" parallel="tests" verbose="3">
+	
+	<listeners>
+		<!-- <listener
+			class-name="CoginementoListners.tesultsListner" />
+		<listener
+			class-name="CoginementoListners.TestAllureListener" /> -->
+			<listener
+			class-name="CoginementoListners.ScreenSHOT" />
+		</listeners>	
+			
+		 <!--  <test name="Login page Test - FF">
+		<parameter name="browser" value="firefox" />
+
+		<classes>
+			<class name="Hubspot.Test.LoginTest"/>
+      			<class name="Hubspot.Test.SignupTest"/>
+		</classes>
+
+	</test> -->
+
+	<test name="Login page Test - Chrome">
+		<parameter name="browser" value="chrome" />
+
+		<classes>
+			<class name="CognimentoCRM.Tests.LoginTest"/>
+      			
+		</classes>
+
+	</test>
+
+
+
+
+
+
+
+
+
+
+</suite>
